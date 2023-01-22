@@ -9,7 +9,7 @@
     table{
         width: 100%;
     }
-    img{
+    .img{
         height: 80px;
         max-width: 80px;
     }
@@ -68,21 +68,32 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-img {
+.img {
   border-radius: 5px 5px 0 0;
 }
 
 .container {
   padding: 2px 16px;
 }
-.nav_buttons{
-    padding: 5px;
-    background-color: #514D4D;
-    border-color: red;
+.nav_buttons {
+    background-color: #ec1a23;
+    border-radius: 100px;
+    box-shadow: rgb(44 187 99 / 20%) 0 -25px 18px -14px inset, rgb(187 44 44 / 15%) 0 1px 2px, rgb(44 187 99 / 15%) 0 2px 4px, rgb(187 44 44 / 15%) 0 4px 8px, rgb(44 187 99 / 15%) 0 8px 16px, rgb(187 44 44 / 15%) 0 16px 32px;
     color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
     margin: 10px;
-    width: 120px;   
-    border-radius: 5px;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 150px;
 }
 </style>
 
@@ -90,7 +101,7 @@ img {
 
     window.onload = function() {
     alert("ola")
-var images=document.getElementsByTagName('img');
+var images=document.getElementsByClassName('.img');
     for (var i = 0 ; i < images.length; i++) {
         images[i].addEventListener('click', function (e) {
             var img=document.elementFromPoint(e.clientX, e.clientY);
@@ -113,9 +124,19 @@ var images=document.getElementsByTagName('img');
     };
     
     </script>
-      <h1>
-        Menu
-    </h1>
+    
+    <table>
+        <tr>
+            <td>
+                <img src="croissanji logo.png" style="height: 100px;"/>
+      
+        
+            </td>
+            <td style="font-size: 70px;font-weight: bold;">
+                    Menu
+            </td>
+        </tr>
+    </table>
   </head>
   <body>
 <div class="tap-image" id="tap_image">
@@ -143,7 +164,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="R.jpg" alt="Cheese" >
+<img class="img" src="R.jpg" alt="Cheese" >
 </td>
 <td>
 <div class="container">
@@ -170,7 +191,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="R.jpg" alt="Cheese" >
+<img class="img" src="R.jpg" alt="Cheese" >
 </td>
 <td>
 <div class="container">
@@ -198,7 +219,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="R.jpg" alt="Cheese" >
+<img class="img" src="R.jpg" alt="Cheese" >
 </td>
 <td>
 <div class="container">
@@ -226,7 +247,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="R.jpg" alt="Cheese" >
+<img class="img" src="R.jpg" alt="Cheese" >
 </td>
 <td>
 <div class="container">
@@ -254,7 +275,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="R.jpg" alt="Cheese" >
+<img class="img" src="R.jpg" alt="Cheese" >
 </td>
 <td>
 <div class="container">
@@ -283,7 +304,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="R.jpg" alt="Cheese" >
+<img class="img" src="R.jpg" alt="Cheese" >
 </td>
 <td>
 <div class="container">
@@ -310,7 +331,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="R.jpg" alt="Cheese" >
+<img class="img" src="R.jpg" alt="Cheese" >
 </td>
 <td>
 <div class="container">
@@ -338,7 +359,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="R.jpg" alt="Cheese" >
+<img class="img" src="R.jpg" alt="Cheese" >
 </td>
 <td>
 <div class="container">
@@ -365,7 +386,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="R.jpg" alt="Cheese" >
+<img class="img" src="R.jpg" alt="Cheese" >
 </td>
 <td>
 <div class="container">
@@ -393,7 +414,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="R.jpg" alt="Cheese" >
+<img class="img" src="R.jpg" alt="Cheese" >
 </td>
 <td>
 <div class="container">
@@ -420,7 +441,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="R.jpg" alt="Cheese" >
+<img class="img" src="R.jpg" alt="Cheese" >
 </td>
 <td>
 <div class="container">
@@ -456,7 +477,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="R.jpg" alt="Fajita" >
+<img class="img" src="R.jpg" alt="Fajita" >
 </td>
 <td>
 <div class="container">
@@ -485,7 +506,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="R.jpg" alt="Chicken BBQ" >
+<img class="img" src="R.jpg" alt="Chicken BBQ" >
 </td>
 <td>
 <div class="container">
@@ -515,7 +536,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
     <td>
-    <img src="R.jpg" alt="Chicken Sub" >
+    <img class="img" src="R.jpg" alt="Chicken Sub" >
     </td>
     <td>
     <div class="container">
@@ -547,7 +568,7 @@ var images=document.getElementsByTagName('img');
 <table>
     <tr>
         <td>
-        <img src="R.jpg" alt="Chicken Catalina" >
+        <img class="img" src="R.jpg" alt="Chicken Catalina" >
         </td>
         <td>
         <div class="container">
@@ -580,7 +601,7 @@ var images=document.getElementsByTagName('img');
 <table>
         <tr>
             <td>
-            <img src="R.jpg" alt="Pepito" >
+            <img class="img" src="R.jpg" alt="Pepito" >
             </td>
             <td>
             <div class="container">
@@ -622,7 +643,7 @@ var images=document.getElementsByTagName('img');
     <table>
             <tr>
                 <td>
-                <img src="R.jpg" alt="Sojok" >
+                <img class="img" src="R.jpg" alt="Sojok" >
                 </td>
                 <td>
                 <div class="container">
@@ -654,7 +675,7 @@ var images=document.getElementsByTagName('img');
         <table>
                 <tr>
                     <td>
-                    <img src="R.jpg" alt="Philly" >
+                    <img class="img" src="R.jpg" alt="Philly" >
                     </td>
                     <td>
                     <div class="container">
@@ -686,7 +707,7 @@ var images=document.getElementsByTagName('img');
             <table>
                     <tr>
                         <td>
-                        <img src="R.jpg" alt="Kafta" >
+                        <img class="img" src="R.jpg" alt="Kafta" >
                         </td>
                         <td>
                         <div class="container">
@@ -727,7 +748,7 @@ var images=document.getElementsByTagName('img');
                 <table>
                         <tr>
                             <td>
-                            <img src="R.jpg" alt="Chicken Basil" >
+                            <img class="img" src="R.jpg" alt="Chicken Basil" >
                             </td>
                             <td>
                             <div class="container">
@@ -760,7 +781,7 @@ var images=document.getElementsByTagName('img');
                     <table>
                             <tr>
                                 <td>
-                                <img src="R.jpg" alt="Beef Burger" >
+                                <img class="img" src="R.jpg" alt="Beef Burger" >
                                 </td>
                                 <td>
                                 <div class="container">
@@ -801,7 +822,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="images/pepsi.jpg" >
+<img class="img" src="images/pepsi.jpg" >
 </td>
 <td>
 <div class="container">
@@ -828,7 +849,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="images/iced_tea.jpg" >
+<img class="img" src="images/iced_tea.jpg" >
 </td>
 <td>
 <div class="container">
@@ -856,7 +877,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="images/tropicana.jpg">
+<img class="img" src="images/tropicana.jpg">
 </td>
 <td>
 <div class="container">
@@ -884,7 +905,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="images/mr_juicy.jpg" >
+<img class="img" src="images/mr_juicy.jpg" >
 </td>
 <td>
 <div class="container">
@@ -912,7 +933,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="images/ayran.jpg" >
+<img class="img" src="images/ayran.jpg" >
 </td>
 <td>
 <div class="container">
@@ -941,7 +962,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="images/water.jpg" >
+<img class="img" src="images/water.jpg" >
 </td>
 <td>
 <div class="container">
@@ -977,7 +998,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="images/fries.jpg" >
+<img class="img" src="images/fries.jpg" >
 </td>
 <td>
 <div class="container">
@@ -1004,7 +1025,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="images/cheddar.jpg" >
+<img class="img" src="images/cheddar.jpg" >
 </td>
 <td>
 <div class="container">
@@ -1032,7 +1053,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="images/bbq.jpg">
+<img class="img" src="images/bbq.jpg">
 </td>
 <td>
 <div class="container">
@@ -1060,7 +1081,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="images/mayo.jpg" >
+<img class="img" src="images/mayo.jpg" >
 </td>
 <td>
 <div class="container">
@@ -1088,7 +1109,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="images/mustard.jpg" >
+<img class="img" src="images/mustard.jpg" >
 </td>
 <td>
 <div class="container">
@@ -1117,7 +1138,7 @@ var images=document.getElementsByTagName('img');
 <table>
 <tr>
 <td>
-<img src="images/cocktail.jpg" >
+<img class="img" src="images/cocktail.jpg" >
 </td>
 <td>
 <div class="container">
