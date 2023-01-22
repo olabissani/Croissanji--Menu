@@ -11,9 +11,10 @@
     }
     img{
         height: 80px;
+        max-width: 80px;
     }
     .tap-image{
-        position: absolute;
+        position: fixed;
         top: 2%;
         left: 50%;
         margin-right: -50%;
@@ -30,7 +31,7 @@
         font-weight: bold;
     }
     .img-clicked{
-        position: absolute;
+        position: fixed;
       top: 50%;
       left: 50%;
       margin-right: -50%;
@@ -38,6 +39,7 @@
       width: 100%;
       height: auto;
       transition: width 2s;
+      max-width: unset;
     }
     td:nth-child(1) { 
         width: 90px;
@@ -72,6 +74,15 @@ img {
 
 .container {
   padding: 2px 16px;
+}
+.nav_buttons{
+    padding: 5px;
+    background-color: #514D4D;
+    border-color: red;
+    color: white;
+    margin: 10px;
+    width: 120px;   
+    border-radius: 5px;
 }
 </style>
 
@@ -110,10 +121,18 @@ var images=document.getElementsByTagName('img');
 <div class="tap-image" id="tap_image">
     Tap image to close.
 </div>
+<div>
+    <input type="button" class="nav_buttons" value="Breakfast" onclick="document.getElementById('breakfast').scrollIntoView();"/>
+    <input type="button" class="nav_buttons" value="Dinner Chicken" onclick="document.getElementById('dinner_chicken').scrollIntoView();"/>
+    <input type="button" class="nav_buttons" value="Dinner Beef" onclick="document.getElementById('dinner_beef').scrollIntoView();"/>
+    <input type="button" class="nav_buttons" value="Burgers" onclick="document.getElementById('burgers').scrollIntoView();"/>
+    <input type="button" class="nav_buttons" value="Drinks" onclick="document.getElementById('drinks').scrollIntoView();"/>
+    <input type="button" class="nav_buttons" value="Side Orders" onclick="document.getElementById('side_orders').scrollIntoView();"/>
+</div>
 <table>
     <tr>
         <td>
-            <h2>
+            <h2 id="breakfast">
                 Breakfast
             </h2>
         </td>
@@ -426,7 +445,7 @@ var images=document.getElementsByTagName('img');
 
     <tr>
         <td>
-            <h2>
+            <h2 id="dinner_chicken">
                 Dinner Chicken
             </h2>
         </td>
@@ -590,7 +609,7 @@ var images=document.getElementsByTagName('img');
        
             <tr>
                 <td>
-                    <h2>
+                    <h2 id="dinner_beef">
                         Dinner Beef
                     </h2>
                 </td>
@@ -695,7 +714,7 @@ var images=document.getElementsByTagName('img');
                 
                         <tr>
                             <td>
-                                <h2>
+                                <h2 id="burgers">
                                     Burgers
                                 </h2>
                             </td>
@@ -768,6 +787,358 @@ var images=document.getElementsByTagName('img');
 </div>
         </td>
     </tr>
+
+    <tr>
+        <td>
+            <h2 id="drinks">
+                Drinks
+            </h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img src="images/pepsi.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>PEPSI CAN</br>
+        بيبسي
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>30,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img src="images/iced_tea.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>ICED TEA</br>
+        شاي مثلج
+        
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>30,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img src="images/tropicana.jpg">
+</td>
+<td>
+<div class="container">
+    <h4><b>TROPICANA</br>
+        تروبيكانا 
+        
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>20,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img src="images/mr_juicy.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>MR. JUICY</br>
+        مستر جوسي
+        
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>10,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img src="images/ayran.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>AYRAN</br>
+        عيران
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>25,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img src="images/water.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>WATER</br>
+        ماء
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>10,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+            <h2 id="side_orders">
+                Side Orders
+            </h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img src="images/fries.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>FIRES BOX</br>
+        علبة بطاطا
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>70,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img src="images/cheddar.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>CHEDDAR DIP</br>
+        شيدر
+        
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>25,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img src="images/bbq.jpg">
+</td>
+<td>
+<div class="container">
+    <h4><b>BBQ DIP</br>
+        باربيكيو 
+        
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>25,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img src="images/mayo.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>MAYO DIP</br>
+        مابونيز
+        
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>25,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img src="images/mustard.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>MAYO MUSTARD DIP</br>
+        مايونيز مع خردل
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>25,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img src="images/cocktail.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>COCKTAIL DIP</br>
+        كوكتيل 
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>25,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    
 </table>
   </body>
 </html>
