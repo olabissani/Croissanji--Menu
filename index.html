@@ -101,7 +101,8 @@
 
     window.onload = function() {
     alert("ola")
-var images=document.getElementsByClassName('.img');
+var images=document.getElementsByClassName('img');
+console.log(images)
     for (var i = 0 ; i < images.length; i++) {
         images[i].addEventListener('click', function (e) {
             var img=document.elementFromPoint(e.clientX, e.clientY);
