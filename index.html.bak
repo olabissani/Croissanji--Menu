@@ -644,7 +644,7 @@ console.log(images)
     <table>
             <tr>
                 <td>
-                <img class="img" src="images/sojok.jpeg" alt="Sojok" >
+                <img class="img" src="images/fajita.jpeg" alt="Sojok" >
                 </td>
                 <td>
                 <div class="container">
